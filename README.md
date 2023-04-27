@@ -69,7 +69,7 @@ The project directory is structured as follows:
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [Apache License 2.0](LICENSE).
 
 Feel free to use this portfolio template for your personal or professional projects.
 
