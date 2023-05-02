@@ -6,26 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/assets/animate.css">
+    <style>
+      .container{
+        z-index: 2;
+      }
+      .content{
+        z-index: 5;
+        margin-top: -20px;
+      }
+    </style>
     
 </head>
 <body>
     <div class="galaxy">
-        <div class="intro-line">
-            <h1 class="intro-heading">
-              <span>Intro</span>
-              <span>Line</span>
-              <span>With</span>
-              <span>Multicolor</span>
-            </h1>
-          </div>
-         
-    </div>
-    <div class="card-container">
-        <div class="card-content">
-          <h2 class="card-title">Welcome</h2>
-          <p class="card-description">This is a sample card with some information.</p>
+      <div class="container">
+        <div class="content">
+          <h1 class="heading" style="color:white; font-size: 120px;font-family: sans-serif; text-align: center; margin-top: 50vh;">HYTEK</h1>
+          <video autoplay muted loop  >
+            <source src="/assets/pexels-pixabay-856309-1920x1080-30fps.mp4" type="video/mp4">
+          </video>
         </div>
+       
       </div>
+      
+    </div>
+    
     <script  src="/assets/animate.js"></script>
 </body>
 </html>

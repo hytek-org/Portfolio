@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   padding: 0;
@@ -11,15 +10,20 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/assets/pexels-francesco-ungaro-998641.jpg');
-  background-size: cover;
-  animation: galaxy-rotation 30s infinite linear;
+  background-color: black;
+
 }
 
 @keyframes galaxy-rotation {
-  0% { background-position: 0 0; }
-  100% { background-position: 100% 100%; }
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100% 100%;
+  }
 }
+
 .star {
   position: absolute;
   background-color: #ffffff;
@@ -28,112 +32,133 @@ body {
 }
 
 @keyframes twinkle {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+
+  5% {
+    opacity: 0.9;
+  }
+
+  10% {
+    opacity: 0.8;
+  }
+
+  15% {
+    opacity: 0.7; padding: 2px;
+  }
+
+  20% {
+    opacity: 0.6;padding: 2px;
+  }
+
+  25% {
+    opacity: 0.5;padding: 2px;
+  }
+
+  30% {
+    opacity: 0.4;
+  }
+
+  35% {
+    opacity: 0.3;
+  }
+
+  40% {
+    opacity: 0.2;
+  }
+
+  45% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  55% {
+    opacity: 0.1;
+  }
+
+  60% {
+    opacity: 0.2;
+  }
+
+  65% {
+    opacity: 0.3;
+  }
+
+  70% {
+    opacity: 0.4;
+  }
+
+  75% {
+    opacity: 0.5;
+  }
+
+  80% {
+    opacity: 0.6;
+  }
+
+  85% {
+    opacity: 0.7;
+  }
+
+  90% {
+    opacity: 0.8;
+  }
+
+  95% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes move {
   0% {
+    transform: translate(-10, 10);
+  }
+
+  10% {
+    transform: translate(-20, 20);
+  }
+
+  20% {
+    transform: translate(-30, 30);
+  }
+
+  30% {
+    transform: translate(-40, 40);
+  }
+
+  40% {
+    transform: translate(-50, 50);
+  }
+
+  50% {
+    transform: translate(-50px, 50px);
+  }
+
+  60% {
     transform: translate(0, 0);
   }
-  50% {
-    transform: translate(-10px, 10px);
+
+  70% {
+    transform: translate(0, 0);
   }
+
+  80% {
+    transform: translate(0, 0);
+  }
+
+  90% {
+    transform: translate(0, 0);
+  }
+
   100% {
-    transform: translate(10px, -10px);
+    transform: translate(50px, -50px);
   }
 }
-
-.intro-line {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-
-  .intro-heading {
-    font-size: 4rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    white-space: nowrap;
-    position: relative;
-    color: transparent;
-    animation: intro-slide 8s infinite;
-  }
-
-  @keyframes intro-slide {
-    0% { left: -100%; opacity: 0; }
-    5% { opacity: 1; }
-    20% { left: 0; }
-    80% { left: 0; }
-    95% { opacity: 1; }
-    100% { left: 100%; opacity: 0; }
-  }
-
-  .intro-heading span {
-    display: inline-block;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-
-  .intro-heading span.active {
-    opacity: 1;
-  }
-
-  .intro-heading span:nth-child(1) {
-    animation: color-fade 8s infinite;
-    color: #ff2e63;
-  }
-
-  .intro-heading span:nth-child(2) {
-    animation: color-fade 8s infinite 1s;
-    color: #32b67a;
-  }
-
-  .intro-heading span:nth-child(3) {
-    animation: color-fade 8s infinite 2s;
-    color: #0066ff;
-  }
-
-  .intro-heading span:nth-child(4) {
-    animation: color-fade 8s infinite 3s;
-    color: #ff9933;
-  }
-
-  @keyframes color-fade {
-    0%, 100% { opacity: 0; }
-    20%, 80% { opacity: 1; }
-  }
-  .card-container {
-    width: 300px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #f1f1f1;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    animation: fade-in-out 2s infinite;
-  }
-
-  @keyframes fade-in-out {
-    0%, 100% { opacity: 0; }
-    50% { opacity: 1; }
-  }
-
-  .card-content {
-    text-align: center;
-  }
-
-  .card-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  .card-description {
-    font-size: 16px;
-    color: #555;
-  }

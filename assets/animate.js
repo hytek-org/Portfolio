@@ -1,9 +1,7 @@
 
 for (let i = 0; i < 100; i++) {
   createStar();
-  createStar();
-  createStar();
-  createStar();
+  
 }
 
 // Function to create a star
