@@ -1,12 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <style>
+    body {
+      background-color: #000000;
+      overflow: hidden;
+    }
+
+    .star {
+      position: absolute;
+      background-color: #ffffff;
+      border-radius: 50%;
+      animation: twinkle 1s infinite;
+    }
+
+    @keyframes twinkle {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes move {
+      0% {
+        transform: translate(0, 0);
+      }
+      50% {
+        transform: translate(-10px, 10px);
+      }
+      100% {
+        transform: translate(10px, -10px);
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+  <script>
+    // Create 100 stars
+    for (let i = 0; i < 100; i++) {
+      createStar();
+    }
+
+    // Function to create a star
+    function createStar() {
+      const star = document.createElement("div");
+      star.className = "star";
+
+      // Randomly position the star within the window
+      const x = Math.random() * window.innerWidth;
+      const y = Math.random() * window.innerHeight;
+      star.style.left = x + "px";
+      star.style.top = y + "px";
+
+      // Randomly set the size of the star
+      const size = Math.random() * 3 + 1;
+      star.style.width = size + "px";
+      star.style.height = size + "px";
+
+      // Randomly set the animation delay
+      const delay = Math.random() * 5 + 1;
+      star.style.animationDelay = delay + "s";
+
+      // Append the star to the body
+      document.body.appendChild(star);
+    }
+  </script>
 </body>
 </html>
