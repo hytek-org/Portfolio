@@ -367,7 +367,7 @@ nav .fas{
        display: none;
     }
     .img-fluid{
-        width: 50%;
+        width: auto;
         height: auto;
     }
     .sub{
