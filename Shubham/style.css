@@ -1,0 +1,93 @@
+.btn{
+    padding: 15px 35px;
+    background: linear-gradient(to left,#4200fc,#f901fc);
+    border-radius: 30px;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color:#0f051e ;
+}
+header nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-top: 20px;
+    z-index: 100;
+    position: relative;
+}
+header nav .logo{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(to left,#4200fc,#f901fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+header nav .navlinks a{
+    color: #fff;
+    margin-left: 50px;
+    position: relative;
+
+}
+header nav .navlinks a::after{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(to left,#4200fc,#f901fc);
+    transition: 0.3s;
+}
+header nav .navlinks a::after{
+    width: 100%;
+}
+.content{
+    padding-top: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content h1{
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.content span{
+    background: linear-gradient(to left,#4200fc,#f901fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+.content p{
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+.hero-img{
+    padding-top: 15px;
+    border: 6px solid #f901fc;
+    background-color: #07021a;
+    border-radius: 10px ;
+}
+
+.hero-img img{
+    width: 380px;
+}
