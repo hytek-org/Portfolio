@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.sidebar{
+	background-color:red;
+	width: 250px;
+	height: 100vh;
+}
+.sidebar nav{
+	padding:45px;
+}
+.sidebar nav li{
+	list-style: none;
+	font-size:30px;
+	
+	padding : 20px 0;
+}
+.sidebar nav li a{
+	text-decoration:none;
+	color:white;
+}
+.main{
+	background-color:yellow;
+	width: 90vw;
+}
+.container{
+	display: flex;
+}
+.infoContainer{
+	background-color: blue;
+	height: 58vh;
+	width: 80vw;
+	margin: 100px auto;
+	display: flex;
+	justify-content: space-around;
+}
+.devinfo{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.hello{
+	font-size: 65px;
+}
+.name{
+	font-size: 50px;
+	font-weight: bold;
+}
+.about{
+	font-size: 40px;
+}
+.moreabout{
+	margin:23px;
+	font-size: 22px;
+}
+.buttons{
+	margin-top:34px;
+}
+.buttons button{
+	padding: 9px 14px;
+	border-radius: 22px;
+	color: white;
+	background-color: dodgerblue;
+	font-weight: bold;
+	font-size: 21px;
+	margin:0 3px;
+	cursor:pointer;
+}
+.buttons button:hover{
+	background-color: white;
+	color: dodgerblue;
+}
+	
+
+.devpic img{
+	height: 58vh;
+	width: 350px;
+	
+}
