@@ -3,7 +3,7 @@
 	padding: 0;
 }
 .sidebar{
-	background-color:red;
+	background-color:gray;
 	width: 250px;
 	height: 100vh;
 }
@@ -21,14 +21,14 @@
 	color:white;
 }
 .main{
-	background-color:yellow;
+	/*background-color:yellow;*/
 	width: 90vw;
 }
 .container{
 	display: flex;
 }
 .infoContainer{
-	background-color: blue;
+	/*background-color: lightgray;*/
 	height: 58vh;
 	width: 80vw;
 	margin: 100px auto;
@@ -57,7 +57,7 @@
 .buttons{
 	margin-top:34px;
 }
-.buttons button{
+.btn{
 	padding: 9px 14px;
 	border-radius: 22px;
 	color: white;
@@ -67,7 +67,14 @@
 	margin:0 3px;
 	cursor:pointer;
 }
-.buttons button:hover{
+
+.btn-sm{
+	font-size:10px;
+	padding: 10px 19px;
+	margin:12px 0px;
+}
+
+.btn:hover{
 	background-color: white;
 	color: dodgerblue;
 }
@@ -77,4 +84,116 @@
 	height: 58vh;
 	width: 350px;
 	
+}
+
+.contactform{
+	padding: 0 34px;
+	padding-top: 144px;
+	
+}
+
+
+.contactform h1{
+	
+	padding:12px 0;
+}
+
+.contactform form div{
+	padding: 5px 0;
+	display: flex;
+	flex-direction: column;
+
+
+}
+
+.contactform form div input{
+	width:26vw;
+	border-radius:5px;
+	margin:6px 0 0 0;
+	padding:3px;
+
+}
+
+#emailHelp{
+	font-size:11px;
+	color: midnightblue;
+	margin:0 5px;
+	padding:3px 0 0 0;
+}
+
+#phoneHelp{
+	font-size:11px;
+	color: midnightblue;
+	margin:0 5px;
+	padding:3px 0 0 0;
+}
+
+#form-check{
+	display:flex;
+	flex-direction: row;
+}
+
+#form-check input{
+	width: 24px;
+	margin:3px ;
+}
+
+.blogItem{
+	margin:20px;
+}
+
+h1{
+	margin: 23px;
+}
+
+.intro h2{
+	margin:23px;
+}
+
+.intro p{
+	margin:23px;
+	font-size: 17px;
+}
+
+.skillContainer{
+	padding:12px;
+}
+
+.skillItem{
+	display:flex;
+	align-items:center;
+	margin:3px 0 0 23px;
+}
+
+.skill{
+	width:265px;
+	height:6px;
+	background-color:black;
+	border:2px solid black;
+}
+
+.hundred{
+	width:250px;
+	background-color:green;
+}
+
+.fifty{
+	width:125px;
+	background-color:blue;
+}
+
+.t5{
+	width:75px;
+	background-color:brown;
+}
+
+@media (max-width:1000px){
+	*{
+		background-color:lightgray;
+	}
+	.sidebar{
+		background-color:lightgray;
+		transform:translate(-443px ,0px);
+		position:absolute;
+	}
 }
